@@ -10,7 +10,7 @@ $query = 'select c.componistId as id, c.naam as naam, count(S.stuknr) as aantal
           group by C.componistId, C.naam
           order by naam';
 
-$data = $db->query($query);
+$data = $db->query($query); 
 
 $html_table = '<table>';
 $html_table = $html_table . '<tr><th>Id</th><th>Naam</th><th>Aantal stukken</th></tr>';
